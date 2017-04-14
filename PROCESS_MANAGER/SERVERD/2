@@ -1,0 +1,36 @@
+#include "serverd.h"
+
+int main()
+{
+    int     ret = 0;
+
+    // 01. Initial
+    ret = initServerd();
+    if (ret < 0){
+        // Change to logPrint();
+        fprintf(stderr, "Initial Serverd Failed\n");
+    }
+
+    // 02. Receive Socket & Send Queue Message 
+    while(1){
+
+        // 02-01. Receive Socket Message
+#if 0
+        ret = rcvSocketMsg();
+        if (ret < 0){
+            usleep(1000);
+            continue;
+        }
+#endif
+
+        // 02-02. Send Queue Message
+#if 0
+        ret = sndQueueMsg();
+        if (ret < 0){
+            fprintf(stderr, "Send Queue Message Failed\n");
+        }
+#endif
+    } 
+
+    return 1;
+}

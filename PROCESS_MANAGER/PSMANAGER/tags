@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AOUT	Makefile	/^AOUT		= psmanager$/;"	m
+CC	Makefile	/^CC			= gcc$/;"	m
+CFLAG	Makefile	/^CFLAG       = -g -W -Wall -Wno-unused -m64 -fno-strict-aliasing$/;"	m
+LOC_INC	Makefile	/^LOC_INC		= -I. $/;"	m
+MEM_SIZE	psmanager.h	25;"	d
+MY_QKEY	psmanager.h	23;"	d
+MsgType	psmanager.h	/^}MsgType;$/;"	t	typeref:struct:msgq
+OBJS	Makefile	/^OBJS		= $(SRCS:.c=.o)$/;"	m
+PSMANAGER_CONF	psmanager.h	/^}PSMANAGER_CONF;$/;"	t	typeref:struct:__anon1
+SHM_CREATE	psmanager.h	28;"	d
+SHM_EXIST	psmanager.h	27;"	d
+SHM_KEY	psmanager.h	24;"	d
+SRCS	Makefile	/^SRCS		= psm_main.c psm_init.c psm_queue.c$/;"	m
+initMsgQueue	psm_init.c	/^int initMsgQueue(){$/;"	f
+initPsm	psm_init.c	/^int initPsm(){$/;"	f
+initSharedMemory	psm_init.c	/^int initSharedMemory(){$/;"	f
+main	psm_main.c	/^int main(){$/;"	f
+msgBuff	psmanager.h	/^    char msgBuff[1024];$/;"	m	struct:msgq
+msgq	psmanager.h	/^typedef struct msgq{$/;"	s
+mtype	psmanager.h	/^    long mtype;$/;"	m	struct:msgq
+myAppName	psm_init.c	/^char    		myAppName[32];$/;"	v
+myQid	psm_init.c	/^key_t             myQid;$/;"	v
+psmConf	psm_main.c	/^PSMANAGER_CONF psmConf = {};$/;"	v
+rcvQueueMsg	psm_queue.c	/^int rcvQueueMsg(char *readBuff){$/;"	f
+shm_addr	psmanager.h	/^    char *shm_addr;$/;"	m	struct:__anon1
+sig_interrupt_alarm	psm_init.c	/^void sig_interrupt_alarm(){$/;"	f
+sig_stop_alarm	psm_init.c	/^void sig_stop_alarm(){$/;"	f

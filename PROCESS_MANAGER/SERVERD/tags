@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AOUT	Makefile	/^AOUT		= serverd$/;"	m
+CC	Makefile	/^CC			= gcc$/;"	m
+CFLAG	Makefile	/^CFLAG       = -g -W -Wall -Wno-unused -m64 -fno-strict-aliasing$/;"	m
+CLIENT_INFO	serverd.h	/^}CLIENT_INFO;$/;"	t	typeref:struct:info
+CLIENT_TBL	serverd.h	/^}CLIENT_TBL;$/;"	t	typeref:struct:client
+DIS_CONNECT_MSG	serverd.h	54;"	d
+INIT_CONNECT_MSG	serverd.h	53;"	d
+LOC_INC	Makefile	/^LOC_INC		= -I. $/;"	m
+MAX_BUFF_SIZE	serverd.h	72;"	d
+MAX_CLIENT_NUM	serverd.h	60;"	d
+MAX_CLIENT_USER_TBL	serverd.h	56;"	d
+MsgType	serverd.h	/^}MsgType;$/;"	t	typeref:struct:msgq
+OBJS	Makefile	/^OBJS		= $(SRCS:.c=.o)$/;"	m
+PSMAN_QKEY	serverd.h	78;"	d
+SERVERD_PORT	serverd.h	79;"	d
+SRCS	Makefile	/^SRCS		= serverd_main.c serverd_init.c serverd_socket.c serverd_queue.c$/;"	m
+ServerdConf	serverd.h	/^}ServerdConf;$/;"	t	typeref:struct:servd
+SocketMessage	serverd.h	/^}SocketMessage;$/;"	t	typeref:struct:msg
+addUserList	serverd_socket.c	/^int addUserList(char *userName, int fd){$/;"	f
+checkConnection	serverd_main.c	/^void checkConnection(){$/;"	f
+checkUserList	serverd_socket.c	/^int checkUserList(char *userName){$/;"	f
+client	serverd.h	/^typedef struct client{$/;"	s
+clientList	serverd.h	/^    CLIENT_INFO     clientList[MAX_CLIENT_NUM];$/;"	m	struct:servd
+clientTbl	serverd.h	/^    CLIENT_TBL clientTbl[MAX_CLIENT_USER_TBL];$/;"	m	struct:servd
+clientTblNum	serverd.h	/^    int clientTblNum;$/;"	m	struct:servd
+curClientNum	serverd.h	/^    int             curClientNum;$/;"	m	struct:servd
+disConnect_client	serverd_socket.c	/^void disConnect_client(char *userName, int clientFd){$/;"	f
+fd	serverd.h	/^    int     fd;$/;"	m	struct:info
+info	serverd.h	/^typedef struct info{$/;"	s
+initMsgQueue	serverd_init.c	/^int initMsgQueue(){$/;"	f
+initServerd	serverd_init.c	/^int initServerd(){$/;"	f
+initSocket	serverd_init.c	/^int initSocket(){$/;"	f
+ipAddress	serverd.h	/^    char ipAddress[64];$/;"	m	struct:client
+main	serverd_main.c	/^int main()$/;"	f
+max_fd	serverd.h	/^    int     max_fd;$/;"	m	struct:servd
+msg	serverd.h	/^typedef struct msg{$/;"	s
+msgBuff	serverd.h	/^    char msgBuff[MAX_BUFF_SIZE];$/;"	m	struct:msgq
+msgData	serverd.h	/^    char    msgData[10240];$/;"	m	struct:msg
+msgq	serverd.h	/^typedef struct msgq{$/;"	s
+mtype	serverd.h	/^    long mtype;$/;"	m	struct:msgq
+mutex	serverd.h	/^    pthread_mutex_t *mutex;$/;"	m	struct:servd
+myAppName	serverd_init.c	/^char        myAppName[32];$/;"	v
+psmanQid	serverd_init.c	/^int         psmanQid;$/;"	v
+psmanQkey	serverd.h	/^    key_t   psmanQkey;$/;"	m	struct:servd
+rcvSocketMsg	serverd_socket.c	/^int rcvSocketMsg(){$/;"	f
+readConfigData	serverd_init.c	/^int readConfigData(){$/;"	f
+readFd_org	serverd.h	/^    fd_set  readFd_org;$/;"	m	struct:servd
+servSocketFd	serverd.h	/^    int     servSocketFd;$/;"	m	struct:servd
+servd	serverd.h	/^typedef struct servd{$/;"	s
+serverdConf	serverd_main.c	/^ServerdConf serverdConf = {};$/;"	v
+sig_interrupt_alarm	serverd_init.c	/^void sig_interrupt_alarm(){$/;"	f
+sndMsg	serverd_queue.c	/^ MsgType     sndMsg;$/;"	v
+sndQueueMsg	serverd_queue.c	/^int sndQueueMsg(char *sndBuff){$/;"	f
+thread_main	serverd_main.c	/^void *thread_main(void *arg){$/;"	f
+userName	serverd.h	/^    char    userName[32];$/;"	m	struct:info
+userName	serverd.h	/^    char    userName[32];$/;"	m	struct:msg
+userName	serverd.h	/^    char userName[32];$/;"	m	struct:client

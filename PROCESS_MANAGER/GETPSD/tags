@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AOUT	Makefile	/^AOUT		= getpsd$/;"	m
+CC	Makefile	/^CC			= gcc$/;"	m
+CFLAG	Makefile	/^CFLAG       = -g -W -Wall -Wno-unused -m64 -fno-strict-aliasing$/;"	m
+CLIENT_ADDR	psd.h	/^}CLIENT_ADDR;$/;"	t	typeref:struct:client
+DIS_CONNECT_MSG	psd.h	16;"	d
+GETPSD_CONF	psd.h	/^}GETPSD_CONF;$/;"	t	typeref:struct:getpsd
+INIT_CONNECT_MSG	psd.h	15;"	d
+LOC_INC	Makefile	/^LOC_INC		= -I. $/;"	m
+OBJS	Makefile	/^OBJS		= $(SRCS:.c=.o)$/;"	m
+SERVERD_PORT	psd.h	18;"	d
+SRCS	Makefile	/^SRCS		= psd_main.c psd_init.c psd_socket.c$/;"	m
+SocketMessage	psd.h	/^}SocketMessage;$/;"	t	typeref:struct:msg
+client	psd.h	/^typedef struct client{$/;"	s
+clientAddr	psd.h	/^    CLIENT_ADDR  clientAddr;$/;"	m	struct:getpsd
+getPID_list	psd_main.c	/^int getPID_list(char *list, int len){$/;"	f
+getpsd	psd.h	/^typedef struct getpsd{$/;"	s
+getpsdConf	psd_main.c	/^GETPSD_CONF		getpsdConf = {};$/;"	v
+initPsd	psd_init.c	/^int initPsd(){$/;"	f
+initSocket	psd_init.c	/^int initSocket(){$/;"	f
+ipAddress	psd.h	/^    char ipAddress[64];$/;"	m	struct:client
+main	psd_main.c	/^int main(){$/;"	f
+msg	psd.h	/^typedef struct msg{$/;"	s
+msgData	psd.h	/^        char    msgData[10240];$/;"	m	struct:msg
+myAppName	psd_init.c	/^char    		myAppName[32];$/;"	v
+readConfigData	psd_init.c	/^int readConfigData(){$/;"	f
+sendSockMsg	psd_socket.c	/^int sendSockMsg(char *sendMsg){$/;"	f
+servSockFd	psd.h	/^    int          servSockFd;$/;"	m	struct:getpsd
+sig_interrupt_alarm	psd_init.c	/^void sig_interrupt_alarm(){$/;"	f
+userName	psd.h	/^        char    userName[32];$/;"	m	struct:msg
+userName	psd.h	/^    char userName[32];$/;"	m	struct:client
